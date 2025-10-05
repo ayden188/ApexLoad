@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte - ApexLoad</title>
+    <link rel="stylesheet" href="2.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">...</header>
+
+    <main>
+        <section class="dashboard-section">
+
+            <div class="dashboard-container">
+                
+                <aside class="sidebar">
+                    <div class="user-profile">
+                        <i class="fas fa-user-circle"></i> 
+                        <h3>Bienvenue, [Nom Utilisateur]</h3>
+                        <p class="user-email">[email@exemple.com]</p>
+                    </div>
+                    
+                    <nav class="dashboard-nav">
+                        <a href="#history" class="nav-item active" data-content="history">
+                            <i class="fas fa-history"></i> Historique des Achats
+                        </a>
+                        <a href="#ids" class="nav-item" data-content="ids">
+                            <i class="fas fa-gamepad"></i> Mes ID de Jeux
+                        </a>
+                        <a href="#settings" class="nav-item" data-content="settings">
+                            <i class="fas fa-cog"></i> Paramètres du Compte
+                        </a>
+                        <a href="#" class="nav-item logout" id="logout-btn">
+                            <i class="fas fa-sign-out-alt"></i> Déconnexion
+                        </a>
+                    </nav>
+                </aside>
+
+                <main class="content-area">
+                    
+                    <div id="history" class="dashboard-content active">
+                        <h2>Historique de vos Transactions</h2>
+                        <div class="transaction-list">
+                            <div class="transaction-item success">
+                                <span class="date">01 Oct. 2025</span>
+                                <span class="details">Free Fire - 500 Diamants</span>
+                                <span class="amount">5000 FCFA</span>
+                                <span class="status">✅ Livré</span>
+                            </div>
+                            <div class="transaction-item pending">
+                                <span class="date">28 Sept. 2025</span>
+                                <span class="details">PUBG - 60 UC</span>
+                                <span class="amount">1500 FCFA</span>
+                                <span class="status">⏳ En attente</span>
+                            </div>
+                        </div>
+                        <p class="no-history">Vous n'avez pas encore d'achats. Commencez dès maintenant !</p>
+                    </div>
+                    
+                    <div id="ids" class="dashboard-content">
+                        <h2>Mes ID de Jeux Sauvegardés</h2>
+                        <p class="info-text">Enregistrez vos ID de joueur pour des recharges instantanées sans risque d'erreur.</p>
+
+                        <div class="saved-ids-list">
+                            <div class="id-item fade-in">
+                                <i class="fas fa-gamepad game-icon ff-icon"></i>
+                                <span class="game-name-tag">Free Fire</span>
+                                <span class="player-id-value">ID: 8765432109876</span>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </div>
+                            <div class="id-item fade-in">
+                                <i class="fas fa-gamepad game-icon pubg-icon"></i>
+                                <span class="game-name-tag">PUBG Mobile</span>
+                                <span class="player-id-value">ID: 5544332211</span>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="add-id-form-container">
+                            <h3>Ajouter un Nouvel ID</h3>
+                            <form id="add-id-form">
+                                <label for="game-select">Sélectionnez le Jeu :</label>
+                                <select id="game-select" required>
+                                    <option value="">-- Choisir un jeu --</option>
+                                    <option value="FreeFire">Free Fire</option>
+                                    <option value="PUBGMobile">PUBG Mobile</option>
+                                    <option value="MobileLegends">Mobile Legends</option>
+                                </select>
+
+                                <label for="new-player-id">ID du Joueur :</label>
+                                <input type="text" id="new-player-id" placeholder="Entrez votre ID de joueur (Ex: 12345678)" required>
+
+                                <button type="submit" class="cta save-id-btn">
+                                    <i class="fas fa-plus-circle"></i> Enregistrer l'ID
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div id="settings" class="dashboard-content">
+                        <h2>Paramètres et Sécurité du Compte</h2>
+                        <p class="info-text">Gérez vos informations personnelles et protégez l'accès à votre compte ApexLoad.</p>
+
+                        <div class="settings-card">
+                            <h3>Informations Personnelles</h3>
+                            <form id="profile-settings-form">
+                                
+                                <label for="current-email">Adresse Email Actuelle :</label>
+                                <input type="email" id="current-email" value="utilisateur@exemple.com" readonly>
+
+                                <label for="new-name">Nom/Pseudo :</label>
+                                <input type="text" id="new-name" placeholder="Entrez votre nouveau nom" value="[Nom Utilisateur]">
+
+                                <button type="submit" class="cta settings-btn">
+                                    <i class="fas fa-save"></i> Enregistrer les changements
+                                </button>
+                            </form>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="settings-card security-card">
+                            <h3>Sécurité du Compte</h3>
+                            <form id="password-settings-form">
+                                
+                                <label for="old-password">Mot de passe Actuel :</label>
+                                <input type="password" id="old-password" placeholder="Mot de passe actuel" required>
+
+                                <label for="new-password">Nouveau Mot de passe :</label>
+                                <input type="password" id="new-password" placeholder="Minimum 8 caractères" required>
+
+                                <label for="confirm-password">Confirmer le Nouveau Mot de passe :</label>
+                                <input type="password" id="confirm-password" placeholder="Confirmer le nouveau mot de passe" required>
+
+                                <button type="submit" class="cta settings-btn security-btn">
+                                    <i class="fas fa-lock"></i> Mettre à jour le mot de passe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </main>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">...</footer>
+    
+    <script src="style.js"></script>
+</body>
+</html>

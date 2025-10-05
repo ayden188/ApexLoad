@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Load - Boutique</title>
+  <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+     
+<section class="header">
+        <div class="logo"> 
+    <h1>ApexLoad</h1>
+</div>
+<div class="links">
+    <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/index.html" >Acceuil</a>
+          
+            <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/shop.html" class="active">Shop</a>
+
+        <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/faq.html" >FAQ</a>
+            <a href="#">Mon Compte</a>
+            <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/contacte.html">contactez</a>
+
+<button class="bnt">Se connecter</button>
+</div>
+          
+
+<div class="burger">
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-times"></i>
+</div>
+
+    </section>
+  <section class="sh-games">
+    <h2>Choisissez votre jeu</h2>
+    <div class="sh-grid">
+      <div class="sh-card">
+        <img src="./img/𝓕𝓻𝓮𝓮 𝓕𝓲𝓻𝓮.jpeg" alt="Free Fire">
+        <h3>Free Fire</h3>
+        <button onclick="openPacks('freefire')">Voir packs</button>
+      </div>
+      <div class="sh-card">
+        <img src="./img/f0d77ffc-5215-4500-98fe-b79db523d91f.jpeg" alt="Call of Duty">
+        <h3>Call of Duty</h3>
+        <button onclick="openPacks('cod')">Voir packs</button>
+      </div>
+      <div class="sh-card">
+        <img src="./img/p2.jpeg" alt="PUBG">
+        <h3>PUBG</h3>
+        <button onclick="openPacks('pubg')">Voir packs</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packs -->
+  <section id="sh-packs" class="sh-hidden">
+    <h2>Packs disponibles</h2>
+    <div id="sh-list"></div>
+  </section>
+  <section class="why-us-section">
+    <div class="why-us-container fade-in">
+        
+        <h2 class="section-title">✨ Pourquoi Choisir ApexLoad ?</h2>
+        <p class="section-subtitle">Votre plateforme de recharge de jeux en Afrique : rapide, sécurisée et économique.</p>
+
+        <div class="advantages-grid">
+            
+            <div class="adv-card">
+                <i class="fas fa-bolt icon-main"></i>
+                <h3>Rapidité Éclair</h3>
+                <p>Livraison des diamants et des UC **en moins de 5 minutes** après confirmation du paiement. Jouez sans attendre !</p>
+            </div>
+            
+            <div class="adv-card">
+                <i class="fas fa-shield-alt icon-main"></i>
+                <h3>Sécurité Maximale</h3>
+                <p>Transactions 100% sécurisées via **Orange Money & Moov Money**. Vos données et vos achats sont protégés.</p>
+            </div>
+            
+            <div class="adv-card">
+                <i class="fas fa-tag icon-main"></i>
+                <h3>Meilleur Prix Garanti</h3>
+                <p>Nous offrons les **tarifs les plus compétitifs** et des bonus exclusifs que vous ne trouverez nulle part ailleurs.</p>
+            </div>
+            
+            <div class="adv-card">
+                <i class="fas fa-headset icon-main"></i>
+                <h3>Support Local 24/7</h3>
+                <p>Notre équipe est disponible jour et nuit pour répondre à vos questions et résoudre le moindre problème.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+  <section class="footer">
+    <div class="footer-conteneur">
+<div class="col">
+<h2>Diamogo 💎</h2>
+<p>Achetez vos monnaies de jeu <br> en toute simplicité et sécurité.</p>
+<h4>rejoigner nous :</h4>
+<div class="social-icons">
+    <a href="VOTRE_LIEN_FACEBOOK"><i class="fab fa-facebook-f"></i></a>
+<a href="VOTRE_LIEN_INSTAGRAM"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/VOTRE_NUMERO"><i class="fab fa-whatsapp"></i></a>
+    <a href="VOTRE_LIEN_DISCORD"><i class="fab fa-discord"></i></a>
+    <a href="VOTRE_LIEN_TIKTOK"><i class="fab fa-tiktok"></i></a>
+                
+</div>
+</div>
+    <div class="col">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="">Acceuil</a></li>
+            <li><a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/jeux.html">Nos Jeux</a></li>
+            <li><a href="">FaQ & support</a></li>
+            <li><a href="">Mon Compte</a></li>
+        </ul>
+</div>
+
+<div class="col">
+    <h3>Information</h3>
+    <ul>
+<li><a href="">Conditions Générales</a></li>
+<li><a href="">Politique de Confidentialité</a></li>
+<li><a href="">Contact@diamogo.com</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 DiamoGo. Tous droits réservés.</p>
+    </div>
+</section>
+
+  <script src="style.js"></script>
+</body>
+</html>
+
+

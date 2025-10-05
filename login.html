@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-ApexLoad</title>
+    <link rel="stylesheet" href="2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <section class="auth-section">
+
+    <div class="auth-container fade-in">
+        
+        <div class="tabs">
+            <button class="tab-button active" data-tab="login">Connexion</button>
+            <button class="tab-button" data-tab="signup">S'inscrire</button>
+        </div>
+
+        <div id="login" class="tab-content active">
+            <h2>Connectez-vous à ApexLoad</h2>
+            <form>
+                <label for="login-email">Email ou Tél. :</label>
+                <input type="text" id="login-email" placeholder="Entrez votre email ou numéro" required autocomplete="off">
+
+                <label for="login-password">Mot de passe :</label>
+                <input type="password" id="login-password" placeholder="Mot de passe"  required autocomplete="off">
+
+                <button type="submit" class="cta auth-btn">Se connecter</button>
+                <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+            </form>
+        </div>
+
+        <div id="signup" class="tab-content">
+            <h2>Créez votre Compte ApexLoad</h2>
+            <form>
+                <label for="signup-name">Nom d'utilisateur :</label>
+                <input type="text" id="signup-name" placeholder="Votre nom ou pseudo"  required autocomplete="off">
+                
+                <label for="signup-email">Email :</label>
+                <input type="email" id="signup-email" placeholder="Votre adresse email"  required autocomplete="off">
+
+                <label for="signup-password">Mot de passe :</label>
+                <input type="password" id="signup-password" placeholder="Minimum 6 caractères"  required minlength="6">
+
+                <button type="submit" class="cta auth-btn">Créer mon compte</button>
+                <p class="terms-text"> <a href="#">Conditions Générales</a>.</p>
+            </form>
+        </div>
+
+    </div>
+</section>
+<script src="style.js"></script>
+</body>
+</html>

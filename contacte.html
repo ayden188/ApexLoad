@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - ApexLoad Support</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+        
+<section class="header">
+        <div class="logo"> 
+    <h1>ApexLoad</h1>
+</div>
+<div class="links">
+    <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/index.html" >Acceuil</a>
+          
+            <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/shop.html">Shop</a>
+
+        <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/faq.html" >FAQ</a>
+            <a href="#">Mon Compte</a>
+            <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/contacte.html" class="active">contactez nous</a>
+
+<button class="bnt">Se connecter</button>
+</div>
+          
+
+<div class="burger">
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-times"></i>
+</div>
+
+    </section>
+
+   
+
+    <main>
+        <section class="apex-contact-section">
+            <div class="contact-container ">
+                
+                <div class="contact-header">
+                    <h1>Support Client ApexLoad</h1>
+                    <p class="contact-slogan">Nous sommes là pour vous aider. Décrivez votre problème ou posez votre question ci-dessous.</p>
+                </div>
+                
+                <div class="contact-content-grid">
+                    
+                    <div class="contact-form-card">
+                        <h2>Envoyez-nous un Message</h2>
+                        <form id="apexContactForm" class="contact-form">
+                            
+                            <div class="form-group">
+                                <label for="contactName">Nom Complet :</label>
+                                <input type="text" id="contactName" name="name" required placeholder="Votre nom ou pseudo">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactEmail">Adresse Email :</label>
+                                <input type="email" id="contactEmail" name="email" required placeholder="contact@exemple.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Sujet :</label>
+                                <select id="contactSubject" name="subject" required>
+                                    <option value="" disabled selected>Choisissez un sujet</option>
+                                    <option value="payment">Problème de Paiement</option>
+                                    <option value="delivery">Problème de Livraison de Diamants/UC</option>
+                                    <option value="general">Question Générale / Partenariat</option>
+                                    <option value="technical">Problème Technique du Site</option>
+                                    
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactMessage">Votre Message :</label>
+                                <textarea id="contactMessage" name="message" rows="5" required placeholder="Décrivez votre demande en détail..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="cta submit-contact-btn">
+                                <i class="fas fa-paper-plane"></i> Envoyer le Message
+                            </button>
+                            
+                            <p id="formStatusMessage" class="status-message"></p>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h2>Nos Informations</h2>
+                        
+                        <div class="info-block">
+                            <i class="fas fa-envelope info-icon"></i>
+                            <p class="info-label">Email Support :</p>
+                            <a href="mailto:support@apexload.com" class="info-link">support@apexload.com</a>
+                        </div>
+                        
+                        <div class="info-block">
+                            <i class="fas fa-phone-alt info-icon"></i>
+                            <p class="info-label">WhatsApp/Téléphone :</p>
+                            <a href="tel:+2250700000000" class="info-link">+225 07 00 00 00 00</a>
+                        </div>
+                        
+                        <div class="info-block">
+                            <i class="fas fa-clock info-icon"></i>
+                            <p class="info-label">Heures d'Ouverture :</p>
+                            <p class="info-text">Support 24/7 (via Email et WhatsApp)</p>
+                        </div>
+
+                        <h3 class="social-title">Suivez-nous</h3>
+                        <div class="social-links-contact">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Siège Social (Abidjan, Côte d'Ivoire)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">...</footer>
+    
+    <script src="style.js"></script>
+    <script src="contact.js"></script> </body>
+</html>

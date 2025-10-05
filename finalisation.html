@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Diamants Free Fire - ApexLoad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<section class="header">
+        <div class="logo"> 
+    <h1>ApexLoad</h1>
+</div>
+<div class="links">
+    <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/index.html" >Acceuil</a>
+          
+            <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/shop.html"class="active">Shop</a>
+
+        <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/faq.html" >FAQ</a>
+            <a href="#">Mon Compte</a>
+                        <a href="file:///home/chronos/u-082244700e122d08f615d4b4da1fb6069b930ec4/MyFiles/projet%20game/contacte.html">contactez nous</a>
+
+            
+<button class="bnt">Se connecter</button>
+</div>
+
+<div class="burger">
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-times"></i>
+</div>
+
+    </section>
+    <main class="game-recharge-page">
+        <section class="game-recharge-section">
+            
+            <header class="recharge-page-header">
+                <img src="./img/Free" alt="Logo Free Fire" class="game-logo-lg">
+                <h1>Achetez des Diamants Free Fire</h1>
+                <p class="recharge-slogan">Recharge rapide, sécurisée et avec bonus garantis.</p>
+            </header>
+
+            <div class="recharge-steps-container">
+
+                <div class="recharge-block player-id-block">
+                    <h2><span class="step-number">1</span> Entrez votre ID de Joueur</h2>
+                    
+                    <div class="input-validation-group">
+                        <input type="text" id="player-id-input" placeholder="Ex: 1234567890" required>
+                        <button class="validate-id-btn cta">Valider l'ID</button>
+                    </div>
+
+                    <p class="id-validation-message"></p>
+                    
+                    <div class="player-info" style="display: none;">
+                        <i class="fas fa-check-circle player-icon-status"></i>
+                        <span class="player-label">Nom du Joueur :</span>
+                        <span id="display-player-name" class="player-name-output">---</span>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="recharge-block payment-summary-block">
+                    <h2><span class="step-number">3</span> Paiement & Résumé</h2>
+                    
+                    <div class="payment-choice-group">
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="om" checked>
+                            <img src="./img/orange.png" alt="Orange Money" class="ig1">
+                            Orange Money
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="moov">
+                            <img src="./img/flooz.png" alt="Moov Money" class="ig">
+                            Moov Money
+                        </label>
+                    </div>
+
+                    <div class="order-summary-card">
+                        <h3>Récapitulatif de la Commande</h3>
+                        <div class="summary-line">
+                            <span>ID Joueur :</span>
+                            <span id="summary-player-id" class="summary-value player-id-value">---</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Nom du Compte :</span>
+                            <span id="summary-player-name" class="summary-value player-name-value">---</span>
+                        </div>
+                        <div class="summary-line highlighted">
+                            <span>Pack Sélectionné :</span>
+                            <span id="summary-pack-value" class="summary-value pack-value-output">Aucun pack</span>
+                        </div>
+                        <div class="summary-line total">
+                            <span>Prix Total :</span>
+                            <span id="summary-total-price" class="summary-value total-price-output">0 FCFA</span>
+                        </div>
+                        
+                        <button class="cta confirm-purchase-btn">Confirmer l'Achat</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="recharge-block pack-selection-block">
+                    <h2><span class="step-number">2</span> Sélectionnez un Pack de Diamants</h2>
+                    
+                    <div class="pack-selection-grid" id="diamond-packs-grid">
+                        <p class="loading-message">Chargement des packs...</p>
+                    </div>
+                </div>
+                
+
+        </section>
+    </main>
+
+    <footer class="footer">...</footer>
+
+    <script src="style.js"></script> 
+</body>
+</html>

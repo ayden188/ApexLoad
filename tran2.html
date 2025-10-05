@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Apex Load - Achat</title>
+  <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+  <div class="page-container">
+    
+    
+    <div class="left">
+      <div class="game-info">
+        <img id="game-logo" src="images/freefire.png" alt="Logo Jeu">
+        <h2 id="game-title">Free Fire</h2>
+      </div>
+
+      <h3>Choisissez un pack :</h3>
+      <div class="packs">
+        <button class="pack">100 Diamants - 500 FCFA</button>
+        <button class="pack">310 Diamants - 1500 FCFA</button>
+        <button class="pack">520 Diamants - 2500 FCFA</button>
+        <button class="pack">1060 Diamants - 5000 FCFA</button>
+      </div>
+    </div>
+    
+    <!-- SECTION DROITE -->
+    <div class="right">
+      <h3>Entrez vos informations</h3>
+      <form action="paiement.html" method="POST">
+        <label for="playerId">Votre ID :</label>
+        <input type="text" id="playerId" name="playerId" placeholder="Ex: 123456789" required>
+
+        <label for="email">Votre Email :</label>
+        <input type="email" id="email" name="email" placeholder="Ex: votremail@gmail.com" required>
+
+        <button type="submit">Continuer vers le paiement</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
